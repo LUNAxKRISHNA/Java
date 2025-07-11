@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class FibonacciLogical {
     static int[] fibArray;
@@ -13,9 +14,7 @@ public class FibonacciLogical {
         System.out.println("Enter the number:");
         int n = scanner.nextInt();
         fibArray = new int[n + 1];
-        for (int i = 0; i < fibArray.length; i++) {
-            fibArray[i] = -1;
-        }
+        Arrays.fill(fibArray, -1);
         fibArray[0] = 0;
         if (n > 0) fibArray[1] = 1;
         System.out.println("The number entered is: " + n);
